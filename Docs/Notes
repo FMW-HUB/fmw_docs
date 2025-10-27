@@ -1,0 +1,13 @@
+1. after_attack for team backline
+2. after_battle for team backline
+3. after_attack for main unit
+4. after_battle for main unit
+5. after_attack for enemy unit
+6. after_battle for enemy unit
+7. after_attack for support attack unit
+8. after_battle for support attack unit
+9. attack_end for main unit
+10. attack_end for enemy unit
+
+Doesn't track attack_end for team backline
+Doesn't track attack_end for support attack unit
