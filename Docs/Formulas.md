@@ -1,5 +1,6 @@
 # Take-mikazuchi
 ## Player Version
+- Additive multiplier
 - Capped Takemikazuchi multiplier = Base multiplier + Exponential multiplier
 - Base multiplier = $`\frac{min(hit\_rate - 100, 200)}{200}`$
 - Exponential multiplier = $`\frac{1 - e^{-(\frac{hit\_rate - 300}{100})}}{2}`$
@@ -7,6 +8,7 @@
 - Capped Takemikazuchi multiplier = $`\frac{min(hit\_rate - 100, 200)}{200}`$ + $`\frac{1 - e^{-(\frac{hit\_rate - 300}{100})}}{2}`$
 
 ## Enemy Version
+- Additive multiplier
 - Enemy multiplier = $`\frac{hit\_rate - 100}{100}`$
   - Normal+ and above formula
 - Enemy multiplier = $`\frac{hit\_rate - 100}{200}`$
