@@ -11,6 +11,6 @@ Since these forms are not available, the game performs a separate run through th
   * When Reimu/Marisa are carried over for NG+, this bug does not affect them because the game falls back on another special exception for form updates that only occur when they are carried over units.
 
 ## Solutions
-* Workaround: Requires a change to the `Data_Change` resource file for the chapter availability of the final forms `ReimuR04`/`MarisaR03` in the same row as the `SC_Reimu`/`SC_Marisa` flags. Replace those rows with the following respective form updates:
-    * 
+* Workaround: Requires a change to the `Data_Change` resource file for the chapter availability of the final forms `ReimuR04`/`MarisaR03` in the same row as the `SC_Reimu`/`SC_Marisa` flags. For columns with chapterIDs from 70-75, replace the empty values with a `1` to make `ReimuR04`/`MarisaR03` also available on Route B.
+  * This will have the unintended consequence of making the final forms available earlier on Route A, but a more comprehensive fix needs to update the flag handling logic to account for exceptions on this bug.																																																
 * Cleaner solution: Update flag handling logic to account whether player is on Route B and/or has hit the old costume flags.
